@@ -1,0 +1,143 @@
+.work {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.experiences {
+    width: 33%;
+    text-align: left;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: #212121;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: 25px;
+    opacity: 0;
+    height: fit-content;
+    
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.video {
+    width: 33%;
+    text-align: left;
+    display: inline-block;
+    flex-wrap: wrap;
+    height: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: #212121;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: 25px;
+    opacity: 0;
+}
+
+#vid1 {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s; 
+}
+
+#vid2 {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s; 
+}
+
+#vid3 {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s; 
+}
+
+#vid4 {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s; 
+}
+
+#vid5 {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s; 
+}
+
+#vid6 {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s; 
+}
+
+.gallery {
+    display: inline-block;
+    height: fit-content;
+    background-color: #212121;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: 25px;
+    opacity: 0;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.grid-img {
+    width: 128px;
+    height: auto;
+}
+
+.socials {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: #212121;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: 25px;
+    opacity: 0;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4.5s;
+}
+
+.buttons {
+    margin: auto;
+}
+
+.img {
+    width: 45px;
+    height: auto;
+    padding: 5px;
+}
+
+.img:hover {
+    background-color: #aaaaaa;
+    border-radius: 5px;
+}
