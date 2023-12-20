@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found</title>
+    <link rel="stylesheet" href="styling.css" type="text/css">
+</head>
+<body>
+    <div class="page-not-found">
+        <h1>404 Page Not Found</h1>
+        <img class="aware" src="/imgs/clueless-aware.gif" alt="Aware">
+        <p>Redirect to homepage in: <span id="time-number">5</span></p>
+    </div>
+
+    <script>
+        var countTime = 5;
+        var x = setInterval(function() {
+
+            document.getElementById("time-number").innerHTML = countTime;
+            countTime -= 1;
+            if (countTime < 0) {
+                clearInterval(x);
+                window.location.replace("/"); 
+            }
+
+        }, 1000);
+    </script>
+    
+</body>
+</html>
