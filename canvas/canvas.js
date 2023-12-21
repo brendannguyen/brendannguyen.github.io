@@ -2,9 +2,12 @@
 window.addEventListener('load', ()=>{ 
         
     resize();
-    document.addEventListener('mousedown', startPainting); 
-    document.addEventListener('mouseup', stopPainting); 
-    document.addEventListener('mousemove', sketch); 
+    document.addEventListener('mousedown', startPainting);
+    document.addEventListener('touchstart', startPainting);  
+    document.addEventListener('mouseup', stopPainting);
+    document.addEventListener('ontouchend', stopPainting); 
+    document.addEventListener('mousemove', sketch);
+    document.addEventListener('ontouchmove', sketch);
     window.addEventListener('resize', resize); 
 }); 
     
