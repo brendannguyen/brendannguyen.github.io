@@ -3,12 +3,8 @@ window.addEventListener('load', ()=>{
         
     resize();
     document.addEventListener('mousedown', startPainting);
-    document.addEventListener('ontouchstart', startPainting);  
     document.addEventListener('mouseup', stopPainting);
-    document.addEventListener('ontouchend', stopPainting);
-    document.addEventListener('ontouchcancel', stopPainting);  
     document.addEventListener('mousemove', sketch);
-    document.addEventListener('ontouchmove', sketch);
     window.addEventListener('resize', resize); 
 }); 
     
@@ -27,13 +23,8 @@ let paint = false;
 // an event e is triggered to the coordinates where  
 // the said event is triggered. 
 function getPosition(event){
-    if (event.type == 'touchstart' || event.type == 'ontouchmove') {
-        coord.x = event.touches[0].clientX - canvas.offsetLeft; 
-        coord.y = event.touches[0].clientY - canvas.offsetTop; 
-    } else {
-        coord.x = event.clientX - canvas.offsetLeft; 
-        coord.y = event.clientY - canvas.offsetTop;
-    } 
+    coord.x = event.clientX - canvas.offsetLeft; 
+    coord.y = event.clientY - canvas.offsetTop;
 } 
   
 // The following functions toggle the flag to start 
