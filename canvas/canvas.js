@@ -3,7 +3,7 @@ window.addEventListener('load', ()=>{
         
     resize();
     document.addEventListener('mousedown', startPainting);
-    document.addEventListener('ontouchmove', startPainting);  
+    document.addEventListener('ontouchstart', startPainting);  
     document.addEventListener('mouseup', stopPainting);
     document.addEventListener('ontouchend', stopPainting);
     document.addEventListener('ontouchcancel', stopPainting);  
