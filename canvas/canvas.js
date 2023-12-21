@@ -25,9 +25,14 @@ let paint = false;
 // Updates the coordianates of the cursor when  
 // an event e is triggered to the coordinates where  
 // the said event is triggered. 
-function getPosition(event){ 
-    coord.x = event.clientX - canvas.offsetLeft; 
-    coord.y = event.clientY - canvas.offsetTop; 
+function getPosition(event){
+    if (event.type == 'touchstart' || event.type == 'ontouchmove') {
+        coord.x = event.touches[0].clientX - canvas.offsetLeft; 
+        coord.y = event.touches[0].clientY - canvas.offsetTop; 
+    } else {
+        coord.x = event.clientX - canvas.offsetLeft; 
+        coord.y = event.clientY - canvas.offsetTop;
+    } 
 } 
   
 // The following functions toggle the flag to start 
@@ -35,7 +40,8 @@ function getPosition(event){
 function startPainting(event){ 
     paint = true; 
     getPosition(event); 
-} 
+}
+
 function stopPainting(){ 
     paint = false; 
 } 
