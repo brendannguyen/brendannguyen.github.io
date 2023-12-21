@@ -1,7 +1,10 @@
+
 .socials {
     text-align: center;
     display: inline-flex;
-    width: 45%;
+    width: 33%;
+    height: fit-content;
+    min-width: min-content;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     background-color: #212121;
@@ -15,13 +18,30 @@
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
+}
+
+.buttons {
+    margin: auto;
+}
+
+.img {
+    width: 45px;
+    height: auto;
+    padding: 5px;
+}
+
+.img:hover {
+    background-color: #aaaaaa;
+    border-radius: 5px;
 }
 
 .experiences {
     width: 33%;
     text-align: left;
     display: inline-block;
+    height: fit-content;
+    min-width: min-content;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     background-color: #212121;
@@ -44,6 +64,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     height: fit-content;
+    min-width: min-content;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     background-color: #212121;
@@ -53,24 +74,39 @@
     margin-top: 25px;
     margin-left: 25px;
     opacity: 0;
+}
 
+#project1 {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
+    animation-delay: 1.5s;
 }
 
-.buttons {
-    margin: auto;
+#project2 {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 
-.img {
-    width: 45px;
-    height: auto;
-    padding: 5px;
+#project3 {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
 }
 
-.img:hover {
-    background-color: #aaaaaa;
-    border-radius: 5px;
+#project4 {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+#project5 {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
 }
