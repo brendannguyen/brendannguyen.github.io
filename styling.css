@@ -111,3 +111,13 @@ a:active {text-decoration: none;}
     width: 256px;
     height: 256px;
 }
+
+.blog_text {
+    animation: color-change 8s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: white; }
+    50% { color: rgb(199, 35, 63); }
+    100% { color: white; }
+  }
