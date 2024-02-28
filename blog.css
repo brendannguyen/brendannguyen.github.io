@@ -1,5 +1,5 @@
 .blogs {
-    text-align: center;
+    text-align: left;
     width: 45%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
@@ -15,4 +15,12 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
+}
+
+img {
+    transition: transform .2s;
+}
+
+img:hover{
+    transform: scale(3);
 }
