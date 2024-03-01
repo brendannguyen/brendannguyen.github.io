@@ -19,35 +19,86 @@
         </div>
         
     </div>
-    <div class="blogs">
-        <h2>Diving into AI and Deep Learning</h2>
-        <h4>Date: 28/02/2024</h4>
-        <p>
-            I have always wanted to delve into AI and machine learning but was always
-            daunted by the task of it but luckily I came across a great learning resource
-            by fast.ai.
-        </p>
-        <a href="https://course.fast.ai/" style="text-align: center;"><b>Practical Deep learning course by fast.ai</b></a>
-        <p>
-            So far I am up to lesson 2 of the course, and hope to deploy a my own macine learning project.
-            So far in following the course, I have experimented with fastai and Pytorch, creating and training a simple data classification
-            model for cats and dogs. Although quite simple, this is my first dive into deep learning.
-        </p>
-        <h5>What I learnt:</h5>
-        <ul>
-            <li>The basics of deep learning</li>
-            <li>How to set up and train a simple model using fastai</li>
-            <li>Data blocks and how to fine tune the model</li>
-        </ul>
-        <h5>What I need to learn:</h5>
-        <ul>
-            <li>How to improve error rate</li>
-            <li>Training a model for other types of media</li>
-            <li>And a bunch more stuff, obviously...</li>
-        </ul>
-        <div style="width: 100%; text-align: center;">
-            <img style="border: 1px solid white; border-radius: 5px; margin: 5px; max-width: 40%; max-height: 40%;" src="/blog_imgs/cat_dog_model1.png"></img>
-            <img style="border: 1px solid white; border-radius: 5px; margin: 5px; max-width: 40%; max-height: 40%;" src="/blog_imgs/cat_dog_model2.png"></img>
+    <div class="blog_container">
+        <div class="blogs" id="blog2">
+            <h2>Training and deploying a DL model</h2>
+            <h4>Date: 01/03/2024</h4>
+            <p>
+                This is my first attempt of creating and training a model on my own machine by using a linux environment
+                on windows which was a task in itself. After managing to get all that up and running with the necessary dependencies,
+                I made use of Jupyter and the notebook feature to test and train my model.
+            </p>
+            <p>
+                The model uses a great dataset I found that represents categories of music into spectrograms. I fine tuned my model doing 80
+                epochs because I began to find diminishing returns and wanted to get my model on and running.
+            </p>
+            <p>
+                The model has 80.5% accuracy rate and tends to get confused with hip-hip and rock based on the confusion matrix. I would have liked
+                this to be better in terms of accuracy but decided that I don't wanna waste my time anymore on training.
+            </p>
+            <div style="width: 100%; text-align: center;">
+                <img style="border: 1px solid white; border-radius: 5px; margin: 5px; max-width: 60%; max-height: 60%;" src="/blog_imgs/training_music_model1.png"></img>
+            </div>
+            <p>
+                Here is an example prediction of a country song, the model being quite sure its a country song. At least deep learning models like country music, because
+                I don't think anyone else does.
+            </p>
+            <div style="width: 100%; text-align: center;">
+                <img style="border: 1px solid white; border-radius: 5px; margin: 5px; max-width: 60%; max-height: 60%;" src="/blog_imgs/training_music_model2.png"></img>
+            </div>
+            <p>
+                The next step was to implement the model onto Hugging Face to host. After some (many) google searches later, I finally got a working python code to deploy 
+                the model on Hugging Face using gradio.
+            </p>
+            <div style="width: 100%; text-align: center;">
+                <img style="border: 1px solid white; border-radius: 5px; margin: 5px; max-width: 60%; max-height: 60%;" src="/blog_imgs/training_music_gradio_code.png"></img>
+            </div>
+            <div style="text-align: center; padding-bottom: 15px; padding-top: 15px;">
+                <a href="https://huggingface.co/spaces/bread03/music_classifier" style="text-align: center;"><b><u>Hugging Face Space</b></u></a>
+            </div>
+            <p>
+                I tested the hugging space with a 30sec extract from Jay-Z's 'The Story of OJ' which is very much a hip-hop song.
+            </p>
+            <div style="width: 100%; text-align: center;">
+                <img style="border: 1px solid white; border-radius: 5px; margin: 5px; max-width: 60%; max-height: 60%;" src="/blog_imgs/jayzthestoryofoj.png"></img>
+            </div>
+            <h5>Final Thoughts:</h5>
+            <p>
+                I hope to implement this into this website by using the Hugging Face API, and hopefully allowing input to be a spectrogram image, a 30 second audio file,
+                 or to be able to use a microphone to hear music being played.
+            </p>
+        </div>
+
+        <div class="blogs" id="blog1">
+            <h2>Diving into AI and Deep Learning</h2>
+            <h4>Date: 28/02/2024</h4>
+            <p>
+                I have always wanted to delve into AI and machine learning but was always
+                daunted by the task of it but luckily I came across a great learning resource
+                by fast.ai.
+            </p>
+            <a href="https://course.fast.ai/" style="text-align: center;"><b>Practical Deep learning course by fast.ai</b></a>
+            <p>
+                So far I am up to lesson 2 of the course, and hope to deploy a my own macine learning project.
+                So far in following the course, I have experimented with fastai and Pytorch, creating and training a simple data classification
+                model for cats and dogs. Although quite simple, this is my first dive into deep learning.
+            </p>
+            <h5>What I learnt:</h5>
+            <ul>
+                <li>The basics of deep learning</li>
+                <li>How to set up and train a simple model using fastai</li>
+                <li>Data blocks and how to fine tune the model</li>
+            </ul>
+            <h5>What I need to learn:</h5>
+            <ul>
+                <li>How to improve error rate</li>
+                <li>Training a model for other types of media</li>
+                <li>And a bunch more stuff, obviously...</li>
+            </ul>
+            <div style="width: 100%; text-align: center;">
+                <img style="border: 1px solid white; border-radius: 5px; margin: 5px; max-width: 40%; max-height: 40%;" src="/blog_imgs/cat_dog_model1.png"></img>
+                <img style="border: 1px solid white; border-radius: 5px; margin: 5px; max-width: 40%; max-height: 40%;" src="/blog_imgs/cat_dog_model2.png"></img>
+            </div>
         </div>
     </div>
 
