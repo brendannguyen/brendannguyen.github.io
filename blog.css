@@ -53,13 +53,5 @@ img {
 }
 
 img:hover{
-    transform: scale(2.5);
-}
-
-#img2 {
-    transition: transform .2s;
-}
-
-#img2:hover{
-    transform: scale(5);
+    transform: scale(1.5);
 }
